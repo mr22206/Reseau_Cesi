@@ -474,6 +474,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#5-conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Conclusion
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -583,6 +592,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#5-conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Conclusion
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -634,6 +652,11 @@
 <li>8 personnes → besoin de 16 adresses → masque /28 suffisant</li>
 <li>Nouvelle configuration : 10.0.0.0/28</li>
 </ul>
+<h2 id="5-conclusion">5. Conclusion</h2>
+<p>L'analyse du problème de connectivité rencontré par l'équipe communication, qui ne parvenait pas à accéder au Wiki, a mis en lumière des lacunes dans la configuration du réseau. Grâce à un diagnostic approfondi, il a été identifié que le routeur de communication (Router_Com) manquait d'une route vers le réseau du Wiki.</p>
+<p>La solution mise en place, consistant à ajouter la route manquante (<code>ip route 10.0.2.0 255.255.255.0 10.1.0.2</code>), a permis de rétablir l'accès au Wiki pour l'équipe communication. Les tests de validation, incluant des pings et des traceroutes, ont confirmé que la connectivité était désormais opérationnelle.</p>
+<p>En parallèle, la nécessité d'optimiser le plan d'adressage a été soulignée, notamment pour éviter le gaspillage d'adresses IP. La proposition d'adopter un masque /28 pour le réseau communication, au lieu du masque /24 actuellement utilisé, permettra de mieux répondre aux besoins de l'équipe tout en libérant des adresses pour d'autres utilisateurs.</p>
+<p>Cette démarche proactive, alliant diagnostic, mise en œuvre de solutions et optimisation des ressources, est essentielle pour garantir une infrastructure réseau efficace et adaptée aux besoins croissants de l'entreprise Engie.</p>
 
 
 
